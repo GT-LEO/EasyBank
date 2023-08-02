@@ -257,12 +257,12 @@ list-style-type:none;
 
 }
 .display{
-	margin-left: 45%;
+	margin-left: 40%;
 }
     .toggle-button:hover .display{
     	display: block;
-margin-left: 40%;
-    }
+/*margin-left: 40%;
+*/    }
     .toggle-button:hover .cta-btn{
     	display: none;
     }
@@ -360,11 +360,11 @@ padding-top: 0;
 }
 .display{
 display: flex;
-gap: 5%;
-margin-left: -70%;
+gap: 3%;
+margin-left: -45%;
 }
 .toggle-button{
-	margin-right:;
+	margin-left:20%;
 
 }
 .navbar-container{
@@ -403,35 +403,9 @@ font-size:0.9rem;
 
  .toggle-button:hover .display{
     	display: flex;
-    	margin-left: -70%;
+    gap: 3%;
     }
-    /*.toggle-button:hover .ex{
-    	display: none;
-    	pointer-events: none;
-    }
-    .toggle-button:hover .initial{
-    	display: none;
-    }*/
     
-      /*.ex:hover .display{
-           	display:flex;
-    }
-.ex:visited .ex{
-           	display: none;
-    }
-           .ex:hover .initial{
-           	display: none;
-    }*/
-                /*     .ex:visited .display{
-           	display: flex;
-    }
-
-                  .ex:visited .ex{
-           	display: none;
-    }
-                                       .ex:visited .initial{
-           	display: none;
-    }*/
    
           .toggle-button:hover .cta-btn{
 display: inline-block;
