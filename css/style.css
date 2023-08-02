@@ -37,9 +37,10 @@ ul a{
 .header-container{
 	display:flex;
 	align-items:center;
-    padding: 0.8rem;
+    padding: 0.5rem;
     justify-content: space-between;
-    flex-flow:row wrap;
+    flex-flow:col wrap;
+
 }
 
 .section-1{
@@ -145,7 +146,7 @@ width: 2rem;
 display: flex;
 flex-flow: row wrap;
 gap: 6%;
-margin-left: 24%;
+margin-left: 23%;
 }
 .logo2 a{
 	color: red;
@@ -170,7 +171,7 @@ color: #fff;
 }
 .invit{
 	text-align: center;
-margin-left:37%;
+margin:0 auto;
 margin-top:8%;
 	font-size:1.1rem;
 background:linear-gradient(to right,#31c273,#5fbda2,#2ab2c2);
@@ -227,11 +228,23 @@ height: 100%;
 	
 }
 
+.initial{
+	display: inline-block;
+	margin-right: 2vw;
+}
+
+.ex a{
+text-decoration: none;
+color: #fff;
+background: #f00;
+}
+
 .ex{
-font-size:1.5rem;
-color:red;
-font-weight: 700;
+font-size:1.3rem;
+color:#f00;
+font-weight: 600;
 display: none;
+
 }
 
 .display a{
@@ -242,47 +255,59 @@ display: none;
 .toggle-button{
 list-style-type:none;
 
-
+}
+.display{
+	margin-left: 45%;
 }
     .toggle-button:hover .display{
     	display: block;
+margin-left: 40%;
     }
-    .toggle-button:hover .ex{
-    	display: block;
-    }
-    .toggle-button:hover .initial{
+    .toggle-button:hover .cta-btn{
     	display: none;
     }
-    
-      .ex:hover .display{
-           	display: none;
-    }
-.ex:active .ex{
-           	display: none;
-    }
-           .ex:hover .initial{
-           	display: block;
-    }
-                     .ex:active .display{
-           	display: none;
-    }
+.toggle-button:hover .initial{
+	display: none;
+}
+.toggle-button:hover .ex{
+	display: block;
+	margin-top: 2.5rem;
+	margin-right: 2rem;
+}
+.display a:hover{
+	background:linear-gradient(to right,#31c273,#5fbda2,#2ab2c2);
+padding: 0.5rem;
+color: #fff;
+}
 
-                  .ex:active .ex{
-           	display: none;
-    }
-                                       .ex:visited .initial{
-           	display: block;
-    }
-   
-          .toggle-button:hover .cta-btn{
-display: none;
-          }
 
-        .toggle-button:active .cta-btn{
-          display: none;	
-          }
-     .toggle-button:visited .cta-btn{
-       display: none;   	
+
+.ex:hover .display{
+	display: none;
+}
+.ex:active .display{
+	display: none;
+}
+.ex:visited .display{
+	display: none;
+}
+
+       .ex:active{
+	display: none;
+}
+.ex:visited{
+	display: none;
+}
+.ex:hover .initial{
+	display: block;
+}
+    .ex:active .initial{
+    	display: block;
+    }
+    .ex:visited .initial{
+    	display: block;
+    }
+	
           }
   .display a:hover{
       background-color: #2dc0ae;
@@ -301,10 +326,11 @@ display: none;
 
 .bar{
 	cursor:pointer;
-	display:flex;
+	/*display:flex;*/
 	font-size:1.4rem;
 	text-decoration: none;
-margin-left:14rem;
+margin-left:10rem;
+display: inline-block;
 
 }
 
@@ -327,13 +353,23 @@ display: flex;
 flex-flow: row wrap;
 gap: 10%;
 
-
+}
+.toggle-button:hover .ex{
+margin-top: 0;
+padding-top: 0;
 }
 .display{
 display: flex;
-gap: 3%;
-margin-left: -70vw;
+gap: 5%;
+margin-left: -70%;
+}
+.toggle-button{
+	margin-right:;
 
+}
+.navbar-container{
+	padding: 0;
+margin:0;
 
 }
 
@@ -343,7 +379,7 @@ margin-left: -70vw;
 	display:block;
 }*/
 .l .cta-btn{
-margin-left: 40px;
+margin-left: 70px;
 border-radius:2rem;
 width: 160px;
 height: 16%;
@@ -360,23 +396,24 @@ font-size:0.9rem;
 	display: none;
 }
 .logo{
-	margin-left: 5%;
+	margin-left: 3%;
 }
 
           
 
  .toggle-button:hover .display{
     	display: flex;
+    	margin-left: -70%;
     }
-    .toggle-button:hover .ex{
+    /*.toggle-button:hover .ex{
     	display: none;
     	pointer-events: none;
     }
     .toggle-button:hover .initial{
     	display: none;
-    }
+    }*/
     
-      .ex:hover .display{
+      /*.ex:hover .display{
            	display:flex;
     }
 .ex:visited .ex{
@@ -384,8 +421,8 @@ font-size:0.9rem;
     }
            .ex:hover .initial{
            	display: none;
-    }
-                     .ex:visited .display{
+    }*/
+                /*     .ex:visited .display{
            	display: flex;
     }
 
@@ -394,12 +431,12 @@ font-size:0.9rem;
     }
                                        .ex:visited .initial{
            	display: none;
-    }
+    }*/
    
           .toggle-button:hover .cta-btn{
-display: block;
-margin-left: 70px;
-border-radius:2rem;
+display: inline-block;
+/*margin-left: 70px;
+*/border-radius:2rem;
 width: 160px;
 height: 16%;
 text-transform: capitalize;
@@ -408,14 +445,27 @@ color:#fff;
           }
 
         .toggle-button:active .cta-btn{
-          display: block;	
+          display: inline-block;
+          /*margin-left: 70px;
+*/border-radius:2rem;
+width: 160px;
+height: 16%;
+text-transform: capitalize;
+padding: 1rem;
+color:#fff;	
           }
      .toggle-button:visited .cta-btn{
-       display: block;   	
+       display: inline-block;
+       /*margin-left: 70px;
+*/border-radius:2rem;
+width: 160px;
+height: 16%;
+text-transform: capitalize;
+padding: 1rem;
+color:#fff;   	
           }
 .align1{
 	display: flex;
-gap:;
 }
 .section-1 div{
 font-size: 14px;
@@ -649,5 +699,11 @@ font-weight: 650;
 
 
 }
+@media(max-width:537px){
+
+
+
+}
+
 
 

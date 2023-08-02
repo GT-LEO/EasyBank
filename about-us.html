@@ -44,15 +44,18 @@ p{
 }
 .back{
 	margin-left: 90%;
-	background: #fff;
-	color: #f00;
+	margin-right: 5%;
+	background: #f00;
+	color: #fff;
 	font-size: 1.5rem;
 	padding: 5px;
 	text-decoration: none;
 }
 footer{
-	margin-bottom: 5%;
-	color: #ff3;
+	padding-bottom: 5%;
+	padding-right: 3%;
+	padding-left: 3%;
+	color: #ff1;
 	font-size: 1.2rem;
 }
 .customer{
@@ -60,12 +63,36 @@ footer{
 	font-size: 1.4rem;
 	font-weight: 600;
 }
+section, .about{
+padding-right: 3%;
+	padding-left: 3%;	
+}
+@media(max-width:760px){
+.container{
+	padding-bottom: 5%;
+}
+
+header{
+		color: #fff;
+		font-size: 1.4rem;
+		font-weight: 700;
+		margin-top:2rem;
+		margin-left: 40%;
+		margin-bottom: 2rem;
+		background: #2d2;
+		padding: 10px;
+		display: inline-block;
+	}
+
+
+}
 
 
 
 	</style>
 </head>
 <body>
+	<div class="container">
 	<div>
 		<a href="./index.html" class="back">&#x2716;</a>
 	</div>
@@ -96,6 +123,6 @@ Contact our customer service on: <a href="tel:+2348147383504" class="customer">t
 
 </footer>
 
-
+</div>
 </body>
 </html>
